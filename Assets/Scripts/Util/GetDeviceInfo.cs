@@ -1,24 +1,64 @@
 using TMPro;
 using UnityEngine;
 
-public class GetDeviceInfo : MonoBehaviour
+namespace KrazyKrakenGames.DeviceInformation
 {
-    public float width;
-    public float height;
-
-    public TextMeshProUGUI labelText;
-
-    private void Update()
+    public enum DeviceType
     {
-        GetScreenSize();
+        DESKTOP = 0,
+        MOBILE = 1
     }
 
-    private void GetScreenSize()
+    public class GetDeviceInfo : MonoBehaviour
     {
-        width = Screen.width;
-        height = Screen.height;
+        public static GetDeviceInfo Instance = null;
 
-        labelText.text = $"Width:{width.ToString()} and Height:{height.ToString()}";
-       
+
+        public float width;
+        public float height;
+
+        public TextMeshProUGUI labelText;
+
+        [SerializeField] private DeviceType type;
+
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        private void Update()
+        {
+            GetScreenSize();
+
+            DetermineDeviceType();
+        }
+
+        private void GetScreenSize()
+        {
+            width = Screen.width;
+            height = Screen.height;
+
+            labelText.text = $"Width:{width.ToString()} and Height:{height.ToString()}";
+
+        }
+
+        private void DetermineDeviceType()
+        {
+            if(width > height)
+            {
+                type = DeviceType.DESKTOP;
+            }
+            else
+            {
+                type = DeviceType.MOBILE;
+            }
+        }
     }
 }

@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 7214196900536416702}
   - component: {fileID: 4226694792841682180}
   - component: {fileID: 8155284559158364494}
-  - component: {fileID: 2783423688854006408}
   - component: {fileID: 648882905362851168}
+  - component: {fileID: 5568131209135755002}
   m_Layer: 5
-  m_Name: Work-Ex-Data
+  m_Name: Education-Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,6 +34,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 764923669176670252}
+  - {fileID: 8882669755972894581}
   - {fileID: 403315655996602949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100,21 +101,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &2783423688854006408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 869711727985976301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b497aec9bc229304eac50a1d1916ce65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  companyNameText: {fileID: 574337503949364481}
-  durationText: {fileID: 7164506830034984719}
-  positionText: {fileID: 9209878992228806770}
 --- !u!114 &648882905362851168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +127,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &5568131209135755002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869711727985976301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee4fcbb1a52dd8419370cb8053b2e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DegreeText: {fileID: 574337503949364481}
+  CollegeText: {fileID: 7164506830034984719}
+  GraduationYearText: {fileID: 9209878992228806770}
 --- !u!1 &3317652456831895714
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +155,7 @@ GameObject:
   - component: {fileID: 574337503949364481}
   - component: {fileID: 242149402747580042}
   m_Layer: 5
-  m_Name: Text-Company Name
+  m_Name: Text-Degree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,7 +309,7 @@ GameObject:
   - component: {fileID: 1563807568577297204}
   - component: {fileID: 9209878992228806770}
   m_Layer: 5
-  m_Name: Text-Position
+  m_Name: Text-GradYear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +389,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.85
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -442,7 +443,7 @@ GameObject:
   - component: {fileID: 3202585890339139499}
   - component: {fileID: 7164506830034984719}
   m_Layer: 5
-  m_Name: Text-Duration
+  m_Name: Text-College
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,12 +456,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7313154731527504521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 403315655996602949}
+  m_Father: {fileID: 3794380052536179543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -522,7 +523,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.85
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -593,7 +594,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8882669755972894581}
   - {fileID: 759244263469469024}
   m_Father: {fileID: 3794380052536179543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

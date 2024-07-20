@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e643291610715514b8ad9c83a413eb75, type: 3}
-  m_Name: Bencin
+  m_Name: Kazoo
   m_EditorClassIdentifier: 
   data:
-    CompanyName: Bencin Studios
-    Duration: December 2023 - Current
-    WorkTitle: Game Developer I
+    CompanyName: Kazoo Games
+    Duration: February 2023 - August  2023
+    WorkTitle: Associate Software Engineer

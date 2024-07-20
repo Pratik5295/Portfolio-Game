@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 namespace KrazyKrakenGames.DataManagement
@@ -6,7 +7,14 @@ namespace KrazyKrakenGames.DataManagement
     {
         public string cardTitle;
 
+        public TextMeshProUGUI titleText;
+
         //Content
         [SerializeField] private CardContent cardContent;
+
+        private void Start()
+        {
+            titleText.text = cardTitle;
+        }
     }
 }
